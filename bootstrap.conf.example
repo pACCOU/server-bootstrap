@@ -1,0 +1,19 @@
+# Copy to bootstrap.conf and edit. Sourced by bash — quote values.
+
+ADMIN_USER="deploy"
+ADMIN_SSH_KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAA... you@laptop"
+SSH_PORT="2222"
+TIMEZONE="America/Toronto"
+
+# Optional: extra inbound TCP ports (space separated)
+EXTRA_TCP_PORTS=""
+
+# Optional: reverse proxy + Let's Encrypt. Leave DOMAIN empty to skip.
+DOMAIN=""
+LETSENCRYPT_EMAIL=""
+UPSTREAM="127.0.0.1:8080"
+
+# Backups
+BACKUP_PATHS="/etc /home /var/www /opt"
+BACKUP_DEST="/var/backups/nightly"
+BACKUP_KEEP_DAYS="14"
